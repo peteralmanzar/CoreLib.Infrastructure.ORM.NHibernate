@@ -2,11 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>peteralmanzar</Authors>
+    <Company>peteralmanzar</Company>
+    <Description>Provides simple base abstraction to implement and nhibernate data layer service</Description>
+    <Copyright>2020</Copyright>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>ORM abstract data layer nhibernate</PackageTags>
+    <RepositoryUrl>https://github.com/peteralmanzar/CoreLib.Infrastructure.ORM.NHibernate</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/peteralmanzar/CoreLib.Infrastructure.ORM.NHibernate</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
     <PackageReference Include="NHibernate" Version="5.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
